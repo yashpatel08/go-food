@@ -152,7 +152,7 @@ span {
 
 .lemon-img {
   position: relative;
-  width: 50%;
+  width: 40%;
   border-radius: 5%;
   height: 5vh;
   right: 25%;
@@ -289,12 +289,16 @@ span {
 .arrow-img {
   position: absolute;
   width: 12vh;
-  margin-top: 9vh;
+  margin-top: 18vh;
   left: 52%;
   top: 26%;
   margin-right: 4vh;
 }
 
+.empty-txt{
+  width: 100%;
+  padding-left: 37vh;
+}
 .meal-shopbtn {
   background-color: white;
   border-radius: 3px;
@@ -568,6 +572,7 @@ span {
   .empty-txt {
     margin-right: 5vh;
     font-size: 3vh;
+    padding-left: 0;
     font-weight: 400;
   }
 }
