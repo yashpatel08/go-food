@@ -453,7 +453,7 @@ span {
     transform: rotate(135deg);
     left: 59%;
     margin-left: 1vh;
-    top: 33%;
+    top: 23%;
   }
 
   .nav-items,
@@ -570,9 +570,13 @@ span {
   }
 
   .empty-txt {
-    margin-right: 5vh;
+    margin-right: 10vh;
     font-size: 3vh;
     padding-left: 0;
     font-weight: 400;
+  }
+
+  .nav-items2{
+    transition: .5s linear;
   }
 }
