@@ -553,16 +553,16 @@ span {
   }
 
   .lemon-img {
-    margin-top: 10vh;
-    margin-left: 5vh;
+    margin-top: 13vh;
+    left: 1px;
   }
 
   .flex-row {
-    width: 90%;
+    width: 95%;
   }
 
   .small-txt {
-    margin-top: 3vh;
+    margin-top: 4vh;
   }
 
   .empty-txt {
