@@ -377,7 +377,7 @@ span{
 
   .vegetable-img{
     border-radius: 60%;
-    margin-left: 30vh;
+    margin-left: 24vh;
     height:20vh;
   }
 
@@ -435,7 +435,8 @@ span{
 
   .arrow-img{
     transform:rotate(135deg);
-    left: 50%;
+    left: 59%;
+    margin-left: 1vh;
     top: 33%;
   }
 
@@ -531,5 +532,19 @@ span{
 
   .nav-icons p:hover{
     opacity: 60%;
+  }
+
+  .lemon-img{
+    margin-top: 13vh;
+  }
+
+  .flex-row{
+    width: 90%;
+  }
+
+  .empty-txt{
+    margin-right: 5vh;
+    font-size: 3vh;
+    font-weight: 400;
   }
 }

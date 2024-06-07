@@ -16,7 +16,7 @@ const Home = () => {
 
                         <p className='big-txt'>Buy Fresh And Orgainc Grocery Food</p><img src={lemon} alt=""  className='lemon-img'/><img className='arrow-img' src={arrow} alt="!" />
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquid cumque eos!</p>
+                        <p>Feel free to explore our top categories of organic food</p>
                         <div className="sub-left">
 
                             <div className="left1">

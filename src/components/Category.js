@@ -90,7 +90,7 @@ const Category = () => {
                                 </div>
                             ))
                         ) : (
-                            <p>Select a category to see meals</p>
+                            <p className='empty-txt'>Select a category to see meals</p>
                         )}
                     </div>
                 </div>
