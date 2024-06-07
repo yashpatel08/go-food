@@ -1,38 +1,535 @@
-.App {
+body , html{
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0vh;
+  margin-right: 70vh; 
+  height: 10vh;
+}
+.nav-container{
+  background-color: transparent;
+}
+.nav-items h2{
+  margin-top: 3.5vh;
+  margin-left: 10vh;
+  padding: 0;
+  margin-right: 1vh;
+}
+
+
+.nav-link{
+  color: black;
+  text-decoration: none;
+  margin-left: 5.3vh;
+  }
+
+.white{
+  position: relative;
+  right: 10%;
+  margin-top: 2.2vh;
+  text-align: start;
+  margin-right: 6vh;
+  color: aliceblue;
+}
+.nav-container{
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.home-content{
+  display: flex;
+  padding-top: 10vh;
+  flex-direction: row;
+}
+
+.home-content{
+  padding-top: 10vh;
+  display: flex;
+  height: 75vh;
+}
+
+.home-container{
+  top: 0;
+}
+
+.left2{
+  display: flex;
+  flex-direction: row;
+  gap: 20vh;
+}
+
+.left2 p{
+  margin-bottom: 0;
+
+}
+
+.left{
+  display: flex;
+  margin-top: -10vh;
+  flex-direction: column;
+  width: 55%;
+  position: relative;
+  background-color: rgb(249, 243, 235);
+}
+
+.left-content{
+  padding-top: 18vh;
+  padding-left: 7vh;
+}
+.right{
+  width: 45%;
+  margin-top: -10vh;
+  background-color: rgb(51, 100, 51);
+}
+
+.sub-left{
+  display: flex;
+  height: 12vh;
+  align-items: center;
+  flex-direction: row;
+  gap: 10vh;
+  margin-top: 6vh;
+}
+
+.shop-btn{
+  margin: 0;
+  height: 4vh;
+  background-color: rgb(51, 100, 51);
+  color: aliceblue;
+  width: 17vh;
+  border: 1px solid;
+  border-radius: 2vh;
+  transition: .4s linear;
+  margin-right: 3vh;
+}
+
+.shop-btn:hover{
+  background-color: rgb(215, 233, 215);
+  color: rgb(51, 100, 51);
+}
+
+.left2 span{
+  color: rgb(51, 100, 51);
+  font-size: 30px;
+  margin-bottom: 0;
+  font-weight: 550;
+}
+.left2 p{
+  margin-top: 0;
+}
+
+.dish-img{
+  position: relative;
+  margin-right: 5vh;
+  right: 22%;
+  margin-top: 10vh;
+  max-width: 600px;
+  width: 60%;
+  border-radius: 50%;
+  height: 70%;
+}
+
+span{
+  color: rgb(51, 100, 51);
+  font-weight: 700;
+}
+
+.lemon-img{
+  position: relative;
+  width: 50%;
+  border-radius: 5%;
+  height: 5vh;
+  right: 25%;
+  margin-left: 0;
+  margin-top: 13vh;
+}
+
+.flex-row{
+  display: flex;
+  gap: 0vh;
+  width: 70%;
+  flex-direction: row;
+}
+
+.big-txt{
+  font-size: 35px;
+  color: rgb(51, 100, 51);
+  font-weight: 600;
+}
+
+.vegetable-img{
+  position: relative;
+  margin-left: 40vh;
+  border-radius: 50%;
+  width: 50%;
+  margin-top: 5vh;
+  height: 30%;
+}
+.category-content{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.btns{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4vh;
+  gap: 3vh;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cat-btn{
+  height: 4vh;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid;
+  width: fit-content;
+  transition: .4s linear;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cat-btn:hover{
+  background-color: rgb(215, 233, 215);
+  color: rgb(51, 100, 51);
+}
+
+.cat-btn.active{
+  background-color: rgb(51, 100, 51);
+  color: antiquewhite;
+}
+
+.cat-btn:after{
+  background-color: rgb(51, 100, 51);
+  color: antiquewhite;
+}
+
+.category-img{
+  width:14vh;
+  border-radius: 50%;
+}
+
+.meals-container{
+  display: grid;
+  margin-left: 10vh;
+  gap: 0vh;
+  grid-template-columns: repeat(2,88vh);
+}
+
+.meal{
+  border: 1px solid;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  width: 80vh;
+  transition: .3s ease-in;
+  padding: 3vh;
+  margin-bottom: 2vh;
+  text-align: center;
+  margin-right: 2vh;
+}
+
+.meal:hover{
+  border: 1px solid rgb(51, 100, 51);
+  box-shadow: 1px 2px;
+}
+
+.meal-title{
+  margin-top: 2vh;
+}
+
+.flex-col{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.meal-des{
+  font-size: 15px;
+  opacity: 70%;
+}
+
+.title-price{
+  display: flex;
+  flex-direction: row;
+  margin-left: 3.5vh;
+  justify-content: space-between;
+}
+
+.title-price p{
+  color: rgb(51, 100, 51);
+  font-weight: 600;
+}
+
+.meal-cont{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.desc-btn{
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.arrow-img{
+  position: absolute;
+  width: 12vh;
+  margin-top: 9vh;
+  left: 52%;
+  top: 26%;
+  margin-right: 4vh;
+}
+
+.meal-shopbtn{
+  background-color: white;
+  border-radius: 3px;
+  width: 19vh;
+  margin-top: 2.2vh;
+  height: 4vh;
+  border: 1px solid rgb(51, 100, 51);
+  color: rgb(51, 100, 51);
+  transition: .4s linear;
+}
+
+.meal-shopbtn:hover{
+  background-color: rgb(215, 233, 215);
+  color: rgb(51, 100, 51);
+}
+
+.nav-icons{
+  display: flex;
+  width: 18px;
+  gap: 3vh;
+  margin-left: 10vh;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-icons p{
+  width: 5vh;
+  height: 5vh;
+  background: transparent;
+  opacity: 80%;
+  color: aliceblue;
+}
+
+.nav-items2{
+  display: none;
+}
+.toogle-div{
+  display: none;
+}
+
+.sub-right{
+  display: flex;
+  flex-direction: row;
+}
+
+.subright-desc{
+  padding-top: 20vh;
+  color: rgb(215, 233, 215);
+}
+
+.discount{
+  font-size: 20px;
+  font-weight: 650;
+}
+
+@media (max-width: 768px) {
+  html,body{
+    overflow-x: hidden;
+    transition: 1s ease-in;
   }
-  to {
-    transform: rotate(360deg);
+  .home-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+
+  .left{
+    width: 100%;
+    height: fit-content;
+  }
+
+  .right{
+    width: 100%;
+  }
+
+  .sub-left{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    height: fit-content;
+    margin-bottom: 2vh;
+  }
+
+  .vegetable-img{
+    border-radius: 60%;
+    margin-left: 30vh;
+    height:20vh;
+  }
+
+  .btns{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .meals-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .meal-cont{
+    display: flex;
+    margin-left: 5vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .meal{
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    width: 90%;
+    padding: 1vh;
+    margin-right: 1vh;
+  }
+
+  .desc-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .meal-shopbtn{
+    height: 5vh;
+    transition: .5s ease-in;
+  }
+
+  .meal-shopbtn:hover{
+    background-color: rgb(51, 100, 51);
+    color: antiquewhite;
+  }
+  .category-img{
+    margin-left: 2vh;
+  }
+
+  .arrow-img{
+    transform:rotate(135deg);
+    left: 50%;
+    top: 33%;
+  }
+
+  .nav-items,.nav-icons{
+    display: none;
+  }
+  .white{
+    display: none;
+  }
+  .toogle-div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0vh;
+    justify-content: space-between;
+    gap: 22vh;
+    width: 90%;
+  }
+  .toogle{
+    width: 4vh;
+    height: 4vh;
+    background: transparent;
+    border: 1px solid rgb(51, 100, 51);
+    margin-top: 3vh;
+    transition: .4s ease-in;
+  }
+
+  .sub-right{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .subright-desc{
+    position: relative;
+    padding-top: 22%;
+    margin-bottom: 4vh;
+    width: 50%;
+    color: rgb(193, 226, 193);
+    right: 10%;
+  }
+
+  .nav-items2{
+    display: flex;
+    background-color: rgb(51, 100, 51);
+    flex-direction: column;
+    transition: .4s linear;
+    width: 70%;
+    border-radius: 4vh;
+    color: aliceblue;
+    justify-content: center;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link{
+    color: aliceblue;
+    transition: .7s ease-in;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 1vh;
+    height: 4vh;
+  }
+
+  .nav-link:hover{
+      background-color: aliceblue;
+      color: rgb(51, 100, 51);
+  }
+  .navv-icons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .left-content{
+    padding-top: 10vh;
+  }
+
+  .right-content{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .dish-img{
+    width: 50%;
+    margin-left: 13vh;
+  }
+
+
+
+  .nav-icons p:hover{
+    opacity: 60%;
   }
 }
